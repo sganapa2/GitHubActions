@@ -1,0 +1,12 @@
+name: my-springboot-function
+version: 1.0.0
+runtime: java17
+
+builder:
+  name: s2i
+  strategy: s2i
+
+functions:
+  mySpringBootFunction:
+    handler: com.githubactions.learn.githubactionslearn
+    runtime: java17  # Replace with the desired Java version
