@@ -23,7 +23,8 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: 'maven'
-          java-version: '3.8.4'
+          java-version: '3.8'
+          maven-version: '3.8.4'
 
       - name: Build with Maven
         run: mvn -B clean install
