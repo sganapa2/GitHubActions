@@ -19,13 +19,13 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      - name: Set up Maven
+      - name: Setup Maven Action
         #uses: actions/setup-java@v2
         uses: s4u/setup-maven-action@v1.2.1
         with:
           #distribution: 'maven'
-          java-version: '17.0.0'
-          maven-version: '3.8.4'
+          java-version: '17'
+          maven-version: '3.8.8'
 
       - name: Build with Maven
         run: mvn -B clean install
