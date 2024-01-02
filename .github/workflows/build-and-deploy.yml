@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          echo "Deploy token: $DEPLOY_TOKEN"
+
       - name: Checkout Repository
         uses: actions/checkout@v2
 
